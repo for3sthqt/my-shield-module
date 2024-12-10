@@ -10,7 +10,7 @@
             // |     a     |     b     |     e     |     f     |
             // |     c     |     d     |     g     |     h     |
             bindings = <
-                &kp A    &kp B    &kp E    &kp F
+                &kp A    &kp B    &bt BT_CLR    &kp F
                 &kp C    &kp D    &kp G    &kp H
             >;
         };
