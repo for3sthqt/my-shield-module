@@ -1,37 +1,36 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: inorichi
+      url-base: https://github.com/inorichi
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+    - name: zmk-pmw3610-driver
+      remote: inorichi
+      revision: main
+  self:
+    path: config
+
+# added zmk-pmw3610-driver
 # manifest:
 #   remotes:
 #     - name: zmkfirmware
 #       url-base: https://github.com/petejohanson
-#     - name: kumamuk-git
-#       url-base: https://github.com/kumamuk-git
+#     - name: inorichi
+#       url-base: https://github.com/inorichi
 #   projects:
 #     - name: zmk
 #       remote: zmkfirmware
 #       revision: feat/pointers-move-scroll
 #       import: app/west.yml
 #     - name: zmk-pmw3610-driver
-#       remote: kumamuk-git
+#       remote: inorichi
 #       revision: main
 #   self:
 #     path: config
-# added zmk-pmw3610-driver
-
-manifest:
-  remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/petejohanson
-    - name: inorichi
-      url-base: https://github.com/inorichi
-  projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: feat/pointers-move-scroll
-      import: app/west.yml
-    - name: zmk-pmw3610-driver
-      remote: inorichi
-      revision: main
-  self:
-    path: config
+    
 #defaultの設定
 # manifest:
 #   remotes:
