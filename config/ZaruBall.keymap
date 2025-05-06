@@ -13,6 +13,7 @@
 #define ADJUST 3
 #define MOUSE 4
 #define SCROLL 1
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 / {
     conditional_layers {
@@ -39,6 +40,11 @@
             #binding-cells = <0>;
             tapping-term-ms = <200>;
             bindings = <&mt RCTL LANG1>, <&mo RAISE>, <&mo 5>;
+        };
+        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        	compatible = "zmk,behavior-sensor-rotate";
+	        #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
     };
 };
@@ -94,7 +100,8 @@
 
         base_layer {
             display-name = "Base";
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            // sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&scroll_up_down>;
             bindings = <
 &kp ESC    &kp N1  &kp N2      &kp N3    &kp N4     &kp N5                       &kp NUMBER_6  &kp N7    &kp N8  &kp N9     &kp N0   &kp MINUS
 &kp TAB    &kp Q   &kp W       &kp E     &kp R      &kp T                        &kp Y         &kp U     &kp I   &kp O      &kp P    &kp EQUAL
