@@ -59,7 +59,13 @@
     };
 };
 
-&sl { release-after-ms = <250>; }; // time needed for double click (for mkp_exit_AML)
+&sl { release-after-ms = <250>; };
+
+&msc {
+};
+
+&inc_dec_kp {
+}; // time needed for double click (for mkp_exit_AML)
 / {
     macros {
         // When in AML, move to default layer when key (except mouse button) pressed
