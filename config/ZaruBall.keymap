@@ -152,7 +152,6 @@
 
         mouse_layer {
             display-name = "Mouse";
-            sensor-bindings = <&scroll_up_down>;
             bindings = <
 &to_layer_0 ESC             &to_layer_0 N1  &to_layer_0 N2  &to_layer_0 N3  &to_layer_0 N4      &to_layer_0 N5                   &to_layer_0 N6   &to_layer_0 N7  &to_layer_0 N8  &to_layer_0 N9  &to_layer_0 N0      &to_layer_0 MINUS
 &to_layer_0 TAB             &to_layer_0 Q   &to_layer_0 W   &to_layer_0 E   &to_layer_0 R       &to_layer_0 T                    &to_layer_0 Y    &to_layer_0 U   &to_layer_0 I   &to_layer_0 O   &to_layer_0 P       &to_layer_0 EQUAL
