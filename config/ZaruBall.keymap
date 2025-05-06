@@ -202,23 +202,25 @@
             display-name = "Base";
             sensor-bindings = <&scroll_down_up>;
             bindings = <
-&kp GRAVE         &kp N1  &kp N2        &kp N3      &kp N4     &kp N5                 &kp N6     &kp N7     &kp N8  &kp N9     &kp N0   &kp MINUS
-&kp TAB           &kp Q   &kp W         &kp E       &kp R      &kp T                  &kp Y      &kp U      &kp I   &kp O      &kp P    &kp SQT
-&kp LEFT_SHIFT    &kp A   &kp S         &kp D       &kp F      &kp G   &kp BACKSLASH  &kp LBKT   &kp H      &kp J   &kp K      &kp L    &kp SEMI   &kp MINUS
-&kp ESCAPE        &kp Z   &kp X         &kp C       &kp V      &kp B   &kp SLASH      &kp RBKT   &kp N      &kp M   &kp COMMA  &kp DOT  &mkp LCLK  &kp EQUAL
-&kp LEFT_CONTROL          &kp LEFT_ALT  &kp DELETE  &mkp MCLK  &mo 1   &kp BACKSPACE  &kp ENTER  &kp SPACE                              &mkp RCLK
+&kp GRAVE       &kp N1  &kp N2        &kp N3     &kp N4  &kp N5                           &kp N6     &kp N7     &kp N8  &kp N9     &kp N0   &kp MINUS
+&kp TAB         &kp Q   &kp W         &kp E      &kp R   &kp T                            &kp Y      &kp U      &kp I   &kp O      &kp P    &kp SQT
+&kp LEFT_SHIFT  &kp A   &kp S         &kp D      &kp F   &kp G             &kp BACKSLASH  &kp LBKT   &kp H      &kp J   &kp K      &kp L    &kp SEMI   &kp MINUS
+&kp ESCAPE      &kp Z   &kp X         &kp C      &kp V   &kp B             &kp SLASH      &kp RBKT   &kp N      &kp M   &kp COMMA  &kp DOT  &mkp LCLK  &kp EQUAL
+&kp DELETE              &kp LEFT_ALT  &mkp MCLK  &mo 1   &kp LEFT_CONTROL  &kp BACKSPACE  &kp ENTER  &kp SPACE                              &mkp RCLK
             >;
         };
 
         naginata_layer {
             display-name = "Naginata";
             bindings = <
-&kp KP_NUMLOCK  &kp F1          &kp F2          &kp F3           &kp F4  &kp F5                    &kp F6           &kp F7   &kp F8   &kp F9     &kp F10  &none
-&kp TAB         &ng Q           &kp UP_ARROW    &ng E            &ng R   &ng T                     &kp F15          &kp F14  &kp F13  &kp F12    &kp F11  &none
-&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &ng F   &ng G      &kp PAGE_UP    &kp INS          &ng H    &ng J    &ng K      &ng L    &ng SEMI   &none
-&none           &ng Z           &ng X           &ng C            &ng V   &ng B      &kp PAGE_DOWN  &kp PRINTSCREEN  &ng N    &ng M    &ng COMMA  &ng DOT  &ng SLASH  &trans
-&kp LEFT_WIN                    &studio_unlock  &none            &none   &ng SPACE  &trans         &trans           &none                                 &td1
+&kp KP_NUMLOCK  &kp F1          &kp F2          &kp F3           &kp F4  &kp F5                    &kp F6           &kp F7   &kp F8   &kp F9     &kp F10    &none
+&kp TAB         &ng Q           &kp UP_ARROW    &ng E            &ng R   &ng T                     &kp F15          &kp F14  &kp F13  &kp F12    &kp F11    &none
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &ng F   &ng G      &kp PAGE_UP    &kp INS          &ng H    &ng J    &ng K      &mkp MCLK  &mkp RCLK  &none
+&kp ESCAPE      &ng Z           &ng X           &ng C            &ng V   &ng B      &kp PAGE_DOWN  &kp PRINTSCREEN  &ng N    &ng M    &mkp LCLK  &ng DOT    &ng SLASH  &trans
+&kp LEFT_WIN                    &studio_unlock  &mkp MCLK        &none   &ng SPACE  &trans         &trans           &none                                   &td1
             >;
+
+            sensor-bindings = <&scroll_down_up>;
         };
 
         // Extra layer can be added in ZMK STUDIO
