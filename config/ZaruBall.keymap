@@ -213,11 +213,11 @@
         naginata_layer {
             display-name = "Naginata";
             bindings = <
-&kp KP_NUMLOCK  &kp F1          &kp F2          &kp F3           &kp F4  &kp F5                    &kp F6           &kp F7   &kp F8   &kp F9     &kp F10    &none
-&kp TAB         &ng Q           &kp UP_ARROW    &ng E            &ng R   &ng T                     &kp F15          &kp F14  &kp F13  &kp F12    &kp F11    &none
-&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &ng F   &ng G      &kp PAGE_UP    &kp INS          &ng H    &ng J    &ng K      &mkp MCLK  &mkp RCLK  &none
-&kp ESCAPE      &ng Z           &ng X           &ng C            &ng V   &ng B      &kp PAGE_DOWN  &kp PRINTSCREEN  &ng N    &ng M    &mkp LCLK  &ng DOT    &ng SLASH  &trans
-&kp LEFT_WIN                    &studio_unlock  &mkp MCLK        &none   &ng SPACE  &trans         &trans           &none                                   &td1
+&kp KP_NUMLOCK  &kp F1          &kp F2          &kp F3           &kp F4  &kp F5                    &kp F6           &kp F7   &kp F8   &kp F9   &kp F10    &none
+&kp TAB         &ng Q           &kp UP_ARROW    &ng E            &ng R   &ng T                     &kp F15          &kp F14  &kp F13  &kp F12  &kp F11    &none
+&kp LEFT_SHIFT  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &ng F   &ng G      &kp PAGE_UP    &kp INS          &ng H    &ng J    &ng K    &none      &mkp MCLK  &mkp RCLK
+&kp ESCAPE      &ng Z           &ng X           &ng C            &ng V   &ng B      &kp PAGE_DOWN  &kp PRINTSCREEN  &ng N    &ng M    &none    &mkp LCLK  &ng SLASH  &trans
+&kp LEFT_WIN                    &studio_unlock  &mkp MCLK        &none   &ng SPACE  &trans         &trans           &none                                 &td1
             >;
 
             sensor-bindings = <&scroll_down_up>;
